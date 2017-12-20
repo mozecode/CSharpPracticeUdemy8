@@ -16,7 +16,7 @@ namespace CSharpUdemyPractice8
             //should display 8.
 
             char[] splitChar = { ',' };
-            var sum = 0;
+
             Console.WriteLine("Please enter a list of numbers separated by commas:  ");
             string text = Console.ReadLine();
 
@@ -26,19 +26,11 @@ namespace CSharpUdemyPractice8
 
             Console.WriteLine();//blank
             
-            var numbers= text.Split(splitChar); //creates an array with the numbers?
+            var numbers= text.Split(splitChar); //creates an array with the numbers
 
             var maxValue = numbers.Max();
 
-            Console.WriteLine(maxValue);
-
-
-
-
-
-
-
-
+            Console.WriteLine("The highest value is " + maxValue);
         }
     }
 }
